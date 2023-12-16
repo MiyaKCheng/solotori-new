@@ -14,7 +14,7 @@ function Kv() {
           src={kv01}
           alt="Key Visual Image"
           className="relative block -rotate-12 w-60 top-20 left-10 inset-0 transform-gpu  backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]" />
-        <div className="absolute top-10 right-[-30px]  z-10 blur-sm w-[240px] h-[300px] backdrop-blur-sm"></div>
+        <div className="absolute top-10 right-[-30px]  z-10 blur-sm w-screen h-[300px] backdrop-blur-sm"></div>
         <div className="absolute top-0 right-0 mt-[-80px] mr-4 z-[-10] w-20">
 
           <NowNormal />

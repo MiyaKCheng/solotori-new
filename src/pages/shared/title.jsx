@@ -5,12 +5,12 @@ const getTitleStyles = (text, marginLeft, marginLeftTittle) => ({
         height: '100px',
         width: '380px',
         position: 'relative',
-        borderRadius: '50px',
+        borderRadius: '0 50px 50px 0',
         border: '1px solid #7D9DF0',
         background: 'rgba(255, 255, 255, 0.05)',
         boxShadow:
             '0px 4px 4px 0px rgba(240, 150, 125, 0.40), 4px 0px 4px 0px rgba(125, 157, 240, 0.40), -4px 0px 4px 0px rgba(125, 240, 207, 0.40)',
-        // backdropFilter: 'blur(10px)',
+        backdropFilter: 'blur(10px)',
         marginLeft: marginLeft || '-40px', // Default to -40px if no margin prop is provided
     },
     title: {

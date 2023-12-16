@@ -1,7 +1,7 @@
 import React from 'react';
 import PopOutLine from './PopOutLine';
 
-const getButtonStyles = (text) => ({
+const getButtonStyles = () => ({
     buttonContainer: {
         display: 'flex',
         alignItems: 'center',
@@ -22,12 +22,12 @@ const getButtonStyles = (text) => ({
     },
 });
 
-function CustomButton({ text }) {
-    const styles = getButtonStyles(text);
+function CustomButton({ text, link }) {
+    const styles = getButtonStyles();
 
     return (
         <div style={styles.buttonContainer}>
-            <a href="https://solotori.jp/" style={styles.buttonText}>{text}</a>
+            <a href={link} style={styles.buttonText}>{text}</a>
             <PopOutLine />
         </div>
     );

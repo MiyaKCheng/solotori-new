@@ -6,7 +6,6 @@ import Title from '../../shared/title';
 import CustomButton from "../../shared/button";
 
 function Content2() {
-  const [count, setCount] = useState(0);
 
   return (
     <div className="relative h-[660px] my-[80px] overflow-hidden">
@@ -22,7 +21,8 @@ function Content2() {
           <p>2022年経産省始動プログラムに採択。</p>
         </div>
         <div className="absolute bottom-28 left-1/2 transform -translate-x-1/2">
-          <CustomButton text="SOLOTORI LAB" />
+          <CustomButton text="SOLOTORI LAB" link="https://solotori.jp/" />
+
         </div>
       </div>
     </div >
