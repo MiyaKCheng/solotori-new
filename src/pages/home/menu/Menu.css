@@ -1,0 +1,49 @@
+.hamburger-menu {
+    display: flex;
+    width: 57px;
+    height: 57px;
+    padding: 19px 15px 20px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    border-radius: 50px;
+    background: linear-gradient(to top right, #7df0cf9c, #7d9ef059, #ff7f5f95, #ff625f89);
+    /* Replace with your gradient colors */
+    box-shadow: 0px 4px 4px 0px rgba(240, 150, 125, 0.40), 2px 0px 4px 0px rgba(125, 157, 240, 0.40), -2px 0px 4px 0px rgba(125, 240, 207, 0.40);
+    backdrop-filter: blur(5px);
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-items {
+    display: none;
+    /* Additional styles for your menu items go here */
+}
+
+.hamburger-menu.open .menu-items {
+    display: block;
+    /* Additional styles for open menu items go here */
+}

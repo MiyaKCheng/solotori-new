@@ -1,0 +1,24 @@
+/* .sub-kv h3 {
+    animation: spin 4s linear infinite;
+    /* Adjust the duration and timing function as needed 
+}*/
+
+/* @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+
+.swiper {
+    width: 50%;
+    height: 50%;
+}
+
+.sub-bg {
+    mix-blend-mode: soft-light;
+}

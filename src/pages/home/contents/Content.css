@@ -1,0 +1,25 @@
+.content p,
+.content li {
+    margin-bottom: 32px;
+    font-weight: 700;
+    line-height: 1.75rem;
+    letter-spacing: 0.5px;
+}
+
+.content li {
+    line-height: 0.8rem;
+}
+
+.content {
+    margin: 150px 38px;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    width: 310px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    width: 390px;
+    /* background: linear-gradient(to top right, #7df0cf9c, #7d9ef059, #f8967d68, #fa959448); */
+    background: url(./assets/img/kvBackground.png); 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover; 
+    height: fit-content;
+    color: #D13200;
+    font-family: Noto Sans JP;
+}

@@ -1,0 +1,37 @@
+import React, { useState } from "react";
+
+
+// In Top.jsx
+import Kv from './kv/Kv.jsx';
+import KvBg from "./kv/KvBg.jsx";
+import Top from './top/Top.jsx';
+import Sub from "./sub/sub.jsx";
+import Content1 from "./contents/Content1.jsx";
+import Content2 from "./contents/Content2.jsx";
+import Content3 from "./contents/Content3.jsx";
+import Info from "./info/Info.jsx";
+import Footer from "./footer/Footer.jsx";
+
+function Index() {
+  const [displayMenu, setDisplayMenu] = useState(false);
+
+  return (
+    <>
+      <Top />
+      <div className="relative">
+
+        <Kv />
+        <Sub />
+        <KvBg className="absolute top-0 inline-grid" />
+      </div>
+      {displayMenu ? <Menu /> : null}
+      <Content1 />
+      <Content2 />
+      <Content3 />
+      <Info />
+      <Footer />
+    </>
+  );
+}
+
+export default Index;
