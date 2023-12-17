@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundColor: ['active'],
       colors: {
         'main-color': '#F0967d',
         'ac-color': '#D13200',

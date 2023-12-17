@@ -7,7 +7,7 @@ function Content1() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="relative h-[660px] my-[80px] overflow-hidden">
+    <div className="relative h-[800px] my-[80px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${cloud001})` }}

@@ -1,6 +1,6 @@
 import React from "react";
 import NowNormal from "./NowNormal.jsx";
-// import { BluredBackground } from "./KvImg.jsx";
+// import { BlurBackground } from "./KvImg.jsx";
 import './Kv.css';
 import kv01 from '../../../assets/img/kv01.png';
 import new_normal from '../../../assets/img/new_normal.png'
@@ -9,7 +9,7 @@ function Kv() {
   return (
     <>
       <div id="KvArea" className=" font-extrabold text-white font-black font-sans relative">
-        {/* <div className="[backdrop-filter:saturate(180%)_blur(20px)] w-[200px] h-[300px] bg-[rgba(225,225,255,0.3)] absolute right-0 z-50"></div> */}
+
         <div className="mt-[0px]">
           <img
             src={kv01}

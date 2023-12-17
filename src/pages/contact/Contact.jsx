@@ -22,9 +22,10 @@ const ContactForm = () => {
   };
 
   return (
-    <section className='fixed bg-[#46458E] bg-opacity-20 h-screen w-full'>
-      <Top />
-      <div className="h-screen text-white p-4 pt-0 flex flex-col items-center ">
+    <section className='grid bg-[#46458E] bg-opacity-20 min-h-screen w-full'>
+
+      <Top className="mt-0" />
+      <div className="min-h-screen text-white p-4 pt-0 flex flex-col items-center">
         <h2 className="text-[60px] font-bold mb-2">Contact us</h2>
         <form onSubmit={handleSubmit} className="w-full max-w-lg px-6">
           <div className="mb-4">

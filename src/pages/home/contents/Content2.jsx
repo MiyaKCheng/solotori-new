@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+
 import cloud002 from '../../../assets/img/cloud002.png';
 import './Content.css';
 import Title from '../../shared/title';
@@ -8,7 +8,7 @@ import CustomButton from "../../shared/button";
 function Content2() {
 
   return (
-    <div className="relative h-[660px] my-[80px] overflow-hidden">
+    <div className="relative h-[800px] my-[80px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${cloud002})` }}

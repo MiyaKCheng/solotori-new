@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
-import './index.css';
+import './main.css';
+import './styles/tailwind.css';
 
-// Import your components
+// pages
 import Index from "./pages/home/Index.jsx";
 import Contact from "./pages/contact/Contact.jsx";
 
-// Main App Component
 const Main = () => (
   <BrowserRouter>
     <div className="app-container">
@@ -22,6 +22,6 @@ const Main = () => (
   </BrowserRouter>
 );
 
-// Use createRoot to render the app
+// render the app
 const root = document.getElementById("root");
 createRoot(root).render(<Main />);

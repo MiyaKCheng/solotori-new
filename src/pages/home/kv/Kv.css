@@ -13,14 +13,6 @@
   position: relative;
 }
 
-/* .kv-image {
-  flex: 1;
-}
-
-.kv-image img {
-  width: 100%;
-  height: auto;
-} */
 
 .kv-text {
   flex: 1;
@@ -58,7 +50,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(4px);
 }
 
 /* .blur-img::before {

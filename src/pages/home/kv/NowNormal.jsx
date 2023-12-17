@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+
 
 function NowNormal() {
-  const [displayMenu, setDisplayMenu] = useState(false);
 
   return (
     <>
