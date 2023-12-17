@@ -21,6 +21,11 @@ export default function Steps() {
         }}
         modules={[Pagination]}
         className="mySwiper"
+        style={{
+          paddingBottom: '50px',
+          '--swiper-pagination-color': '#D13200',
+          '--swiper-pagination-bullet-inactive-color': '#FFF'
+        }}
       >
         <SwiperSlide>Slide 1</SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
