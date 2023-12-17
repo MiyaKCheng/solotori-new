@@ -21,7 +21,6 @@ function Index() {
     <>
       <Top />
       <div className="relative">
-        ß
         <Kv />
         <Sub />
         <KvBg className="absolute top-0 inline-grid" />
