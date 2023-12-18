@@ -50,7 +50,7 @@ const KvBg = () => {
                     marginTop: "-80px",
                     position: "absolute",
                     transform: offset.to((o) => `translateY(-${o * 0.3}px)`),
-                    zIndex: "-1",
+                    zIndex: -1,
                 }}
                 alt="Cloud 01"
             />
@@ -72,12 +72,13 @@ const KvBg = () => {
                 src={cloud01}
                 style={{
                     display: "block",
-                    width: "80%",
-                    marginLeft: "-30%",
-                    marginTop: "70%",
+                    width: "100%",
+                    marginLeft: "-50%",
+                    marginTop: "40%",
                     position: "absolute",
                     transform: offset.to((o) => `translateY(-${o * 0.15}px)`),
                     zIndex: "-1",
+                    opacity: "0.5",
                 }}
                 alt="Cloud 03"
             />
@@ -93,6 +94,7 @@ const KvBg = () => {
                     left: "-80px",
                     marginTop: "280px",
                     zIndex: -1,
+                    opacity: "1"
                 }}
                 alt="3D Cloud"
             />

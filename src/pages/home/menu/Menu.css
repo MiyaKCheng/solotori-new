@@ -3,8 +3,7 @@
     --bar-width: 25px;
     --bar-height: 3px;
     border-radius: 50px;
-
-    --menu-background: linear-gradient(to top right, #6de8b9, #b0d4ff59, #fbd7d5, #F0C6BD);
+    --menu-background: linear-gradient(to top right, #6de8b9, #b0deff59, #fdbdbd, #f0c2bd);
 }
 
 /* Common styles for menu container and hamburger menu */

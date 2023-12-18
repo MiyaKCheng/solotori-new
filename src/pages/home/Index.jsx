@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 // Import other components
 import Kv from './kv/Kv.jsx';
-import KvBg from "./kv/KvBg.jsx";
 import Top from './top/Top.jsx';
 import Sub from "./sub/sub.jsx";
 import Content1 from "./contents/Content1.jsx";
@@ -22,11 +21,11 @@ function Index() {
       <Top />
 
       <div className="relative">
-        {/* Content layers */}
-        <Kv />
-        <Sub />
         <Bg style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: '0' }} />
+        <Kv />
+
       </div>
+      <Sub />
       <Content1 />
       <Content2 />
       <Content3 />

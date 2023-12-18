@@ -20,7 +20,7 @@ function Content3() {
         style={{ backgroundImage: `url(${cloud003})` }}
       />
       <div className="pt-[90px]">
-        <Title text={<span>SOLOTORIの<br />クリエイターの良さ</span>} marginLeft="-30px" marginLeftTittle="40px" />
+        <Title text={<span>SOLOTORIの<br />クリエイターの良さ</span>} marginLeft="-25px" marginLeftTittle="30px" />
         <div className="content absolute inset-0 flex justify-center pt-[80px]">
           <p>
             SOLOTORIのクリエイターは一人旅であった、あなたの思いや素敵なことを投稿しているだよ

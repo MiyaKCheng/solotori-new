@@ -1,18 +1,15 @@
-import { useState } from "react";
 import cloud001 from "../../../assets/img/cloud001.png";
 import "./Content.css";
 import Title from "../../shared/title";
 
 function Content1() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="relative h-[800px] my-[80px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${cloud001})` }}
       />
-      <div className="pt-[90px]">
+      <div className="pt-[150px]">
         <Title text="ひとり旅の魅力" />
         <div className="content absolute pt-[200px] inset-0 flex justify-center">
           <p>
