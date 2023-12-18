@@ -2,7 +2,9 @@
     --menu-size: 57px;
     --bar-width: 25px;
     --bar-height: 3px;
-    --menu-background: linear-gradient(to top right, #7df0cf8c, #7d9ef059, #ff7f5f55, #ff625f89);
+    border-radius: 50px;
+
+    --menu-background: linear-gradient(to top right, #6de8b9, #b0d4ff59, #fbd7d5, #F0C6BD);
 }
 
 /* Common styles for menu container and hamburger menu */
@@ -90,6 +92,6 @@
 }
 
 /* Slide-in animation */
-.hamburger-menu.open + .menu-items-container {
+.hamburger-menu.open+.menu-items-container {
     transform: translateX(0);
 }

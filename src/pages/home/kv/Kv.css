@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh;
   position: relative;
+  margin-top: -10px;
 }
 
 .kvshadow {
@@ -27,7 +28,7 @@
 .kvBg {
   width: 40%;
   position: absolute;
-  top: 0;
+  top: -5px;
   /* Position it at the bottom */
   display: flex;
   flex-direction: column;

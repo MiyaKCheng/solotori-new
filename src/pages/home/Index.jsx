@@ -26,15 +26,16 @@ function Index() {
         <Kv />
         <Sub />
         <Bg style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: '0' }} />
-        <Content1 />
-        <Content2 />
-        <Content3 />
-        <Steps />
-        <Ins />
-        <Info />
-        <Footer />
-
       </div>
+      <Content1 />
+      <Content2 />
+      <Content3 />
+      <Steps />
+      <Ins />
+      <Info />
+      <Footer />
+
+
 
       {displayMenu ? <Menu /> : null}
     </>
