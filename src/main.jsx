@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import './main.css';
 import './styles/tailwind.css';
+// import './reset.css';
 
 // pages
 import Index from "./pages/home/Index.jsx";

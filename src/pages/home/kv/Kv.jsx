@@ -1,5 +1,5 @@
 import React from "react";
-import NowNormal from "./NowNormal.jsx";
+import NewNormal from "./NewNormal.jsx";
 // import { BlurBackground } from "./KvImg.jsx";
 import './Kv.css';
 import kv01 from '../../../assets/img/kv01.png';
@@ -8,21 +8,22 @@ function Kv() {
 
   return (
     <>
-      <div id="KvArea" className=" font-extrabold text-white font-black font-sans relative">
+      <div id="KvArea" className=" font-extrabold text-white font-sans relative">
 
         <div className="mt-[0px]">
           <img
             src={kv01}
             alt="Key Visual Image"
-            className="relative block -rotate-12 w-60 top-20 left-10 inset-0 transform-gpu  backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]" />
+            className="relative block border-[3px] border-white kvshadow rounded-[15px]  -rotate-12 w-60 top-[95px] left-[55px] inset-0 transform-gpu  backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]" />
           {/* <div className="absolute top-10 right-[-30px]  z-10 blur-sm w-screen h-[300px] backdrop-blur-sm"></div> */}
+          
           <div className="absolute top-0 right-0 mt-[-80px] mr-4 z-[-10] w-20">
-
-            <NowNormal />
+            <NewNormal />
           </div>
+
         </div>
-        <div className="absolute bottom-[150px] left-3 h-200">
-          {/* <NowNormal /> */}
+        
+        <div className="absolute top-[500px] left-3 h-200">
           <div className="grid grid-cols-10">
             <p className="text-[20px] text-center tracking-widest bg-main-color bg-cover col-start-1 col-end-8 row-span-1 ">
               クリエイター

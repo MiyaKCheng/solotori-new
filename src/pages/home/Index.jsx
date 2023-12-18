@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 // In Top.jsx
 import Kv from './kv/Kv.jsx';
 import KvBg from "./kv/KvBg.jsx";
@@ -22,7 +22,8 @@ function Index() {
       <div className="relative">
         <Kv />
         <Sub />
-        <KvBg className="absolute top-0 inline-grid" />
+        <div className=" h-[500px]"></div>
+        <KvBg className="absolute top-0" />
       </div>
       {displayMenu ? <Menu /> : null}
       <Content1 />

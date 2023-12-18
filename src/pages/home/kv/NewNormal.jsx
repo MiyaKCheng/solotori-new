@@ -1,6 +1,6 @@
 
 
-function NowNormal() {
+function NewNormal() {
 
   return (
     <>
@@ -19,4 +19,4 @@ function NowNormal() {
   );
 }
 
-export default NowNormal;
+export default NewNormal;

@@ -1,0 +1,5 @@
+.parallax-container {
+    will-change: transform;
+    transition: transform 0.2s ease-out;
+  }
+  
