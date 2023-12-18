@@ -1,5 +1,14 @@
 .parallax-container {
-    will-change: transform;
-    transition: transform 0.2s ease-out;
-  }
-  
+  will-change: transform;
+  transition: transform 0.2s ease-out;
+}
+
+/* KvBg.css */
+.kv-bg-container {
+  height: 1500px;
+  /* 將高度設定為您想要的值 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

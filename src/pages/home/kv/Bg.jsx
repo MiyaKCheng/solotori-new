@@ -1,16 +1,10 @@
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import kv3dCloud from "../../../assets/img/kv-3d-cloud.png";
-import cloudBg from "../../../assets/img/cloud-bg.png";
 import cloud01 from "../../../assets/img/cloud01.png";
 import cloud02 from "../../../assets/img/cloud02.png";
 import cloud03 from "../../../assets/img/cloud03.png";
-import cloud04 from "../../../assets/img/cloud04.png";
-import cloud05 from "../../../assets/img/cloud05.png";
-import "./KvBg.css";
-
-// Existing imports...
-
+import cloudBg from "../../../assets/img/cloud-bg.png";
+import kv3dCloud from "../../../assets/img/kv-3d-cloud.png";
 export default function KvBg() {
     return (
         <div className="kv-bg-container" style={{ overflow: "hidden" }}>
