@@ -11,7 +11,7 @@ const getButtonStyles = () => ({
         border: '2px solid #FFF',
         background: '#D13200',
         justifyContent: 'center',
-        gap: '5px', // Adjust the gap between the Shell icon and text
+        gap: '5px', //  between the Shell and text
     },
     buttonText: {
         color: '#FFF',

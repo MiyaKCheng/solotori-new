@@ -8,14 +8,14 @@ import CustomButton from "../../shared/button";
 function Content2() {
 
   return (
-    <div className="relative h-[800px] my-[80px] overflow-hidden">
+    <div className="relative h-[700px] my-[80px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${cloud002})` }}
       />
       <div className="pt-[90px]">
         <Title text="SOLOTORIとは？" marginLeft="-20px" marginLeftTittle="30px" />
-        <div className="content absolute inset-0 flex justify-center">
+        <div className="content absolute inset-0 pt-10 flex justify-center">
           <p>「ひとり旅をもっと自由に」を目指し、ひとり旅のメディアです。</p>
           <p>今後地域とのマッチングまでサポートするシステムにリニューアル予定。</p>
           <p>2022年経産省始動プログラムに採択。</p>

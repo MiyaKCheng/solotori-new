@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import CustomButton from '../shared/button';
 import step1 from '../../assets/img/step01.png'
 import step2 from '../../assets/img/step02.png'
+import Clipboard from '../shared/clipbord';
 import Title from '../shared/title';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -46,7 +47,7 @@ export default function Swipe() {
             className='my-4'
           />
           <h5 className='w-[260px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'>SOLOTORIのInstagramの公式アカウント(@solotori_office)をフォローしてください!</h5>
-          <CustomButton text={'公式アカウント'} style={{ fontWeight: '700' }} />
+          <CustomButton text={'公式アカウント'} style={{ fontWeight: '700' }} link="https://www.instagram.com/solotori_official/" />
           <span className='h-[60px]'></span>
         </SwiperSlide>
         {/* 2 */}
@@ -90,7 +91,7 @@ export default function Swipe() {
             <div className=" text-center text-xs font-bold leading-[20px]">#NewNormal</div>
           </div>
           <h5 className='w-[268px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'><br />　　　　　　　全てのハッシュタグをつけて、撮影した素敵な世界観の写真をインスタに投稿してくださいい!</h5>
-          <CustomButton text={'＃一括でコピー'} style={{ fontWeight: '700' }} />
+          <Clipboard />
           <span className='h-[60px]'></span>
         </SwiperSlide>
       </Swiper >

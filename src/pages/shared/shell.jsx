@@ -16,7 +16,7 @@ function Shell({ whiteOutline }) {
                 stroke={whiteOutline ? "#FFFFFF" : "#D13200"}
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                fill={whiteOutline ? "none" : "#D13200"}
+                fill={whiteOutline ? "none" : "none"}
             />
         </svg>
     );

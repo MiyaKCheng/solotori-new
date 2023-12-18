@@ -42,7 +42,7 @@
 
 /* Hamburger icon animations */
 .hamburger-menu.open .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+    transform: rotate(-45deg) translate(-7px, 7px);
 }
 
 .hamburger-menu.open .bar:nth-child(2) {
@@ -50,7 +50,7 @@
 }
 
 .hamburger-menu.open .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+    transform: rotate(45deg) translate(-7px, -7px);
 }
 
 /* Menu items container and list */
@@ -80,14 +80,16 @@
 .menu-items {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    align-content: space-between;
+    padding: 20% 5%;
     width: 100%;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
-    line-height: 209.236%;
-    letter-spacing: 1px;
+    line-height: 220%;
+    letter-spacing: 0.75px;
 }
 
 /* Slide-in animation */

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Menu.css";
+import Shell from "../../shared/shell";
 
 function Menu() {
   // track the menu is open or not
@@ -23,13 +24,35 @@ function Menu() {
 
       {/* items container */}
       <div className={`menu-items-container ${isMenuOpen ? "open" : ""}`}>
-        <div className="menu-items text-[32px]">
-          <div>ひとり旅の魅力</div>
-          <div>SOLOTORIとは？</div>
-          <div>クリエイターの良さ</div>
-          <div>応募方法</div>
-          <div>みんなの旅</div>
-          <div>応募要項</div>
+        <div className="menu-items">
+        <div className="flex items-center gap-2">
+            <Shell />
+            Top
+          </div>
+          <div className="flex items-center gap-2">
+            <Shell />
+            ひとり旅の魅力
+          </div>
+          <div className="flex items-center gap-2">
+            <Shell />
+            SOLOTORIとは？
+          </div>
+          <div className="flex items-center gap-2">
+            <Shell />
+            クリエイターの良さ
+          </div>
+          <div className="flex items-center gap-2">
+            <Shell />
+            応募方法
+          </div>
+          <div className="flex items-center gap-2">
+            <Shell />
+            みんなの旅
+          </div>
+          <div className="flex items-center gap-2">
+            <Shell />
+            応募要項
+          </div>
         </div>
       </div>
     </div>

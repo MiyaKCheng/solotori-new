@@ -39,10 +39,24 @@ const KvBg = () => {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    zIndex: -50,
+                    zIndex: -10,
                     opacity: "0.7",
 
+                }} />
+            <animated.img
+                src={cloud01}
+                style={{
+                    display: "block",
+                    height: "400px",
+                    width: "100%",
+                    marginLeft: "180px",
+                    marginTop: "660px",
+                    position: "absolute",
+                    transform: offset.to((o) => `translateY(-${o * 0.1}px)`),
+                    zIndex: -1,
+                    opacity: "0.5",
                 }}
+                alt="Cloud 01"
             />
 
             {/* Cloud Layers for KV Area */}
