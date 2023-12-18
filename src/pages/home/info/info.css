@@ -1,27 +1,24 @@
-/* Info.css */
-.info-list li :first-child {
-margin: 10px;
+/* scrollbar */
+.info-list {
+  max-height: 580px;
+  overflow-y: auto;
+
 }
 
-/* Customize the scrollbar */
-::-webkit-scrollbar {
-    width: 8px; /* Set the width of the scrollbar */
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(88, 1, 1); /* Change the color on hover */
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #D13200; /* Set the color of the scrollbar handle */
-    border-radius: 10px; /* Optional: round corners of the handle */
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: rgba(240, 150, 125, 0.50); /* Set the color of the scrollbar track */
-    border-radius: 10px;
-  }
-  
+.info-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.info-list::-webkit-scrollbar-thumb {
+  background: #D13200;
+  border-radius: 10px;
+}
+
+.info-list::-webkit-scrollbar-track {
+  background: rgba(240, 150, 125, 0.50);
+  border-radius: 10px;
+}
+
+.info-list::-webkit-scrollbar-thumb:hover {
+  background: rgb(88, 1, 1);
+}
