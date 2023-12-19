@@ -24,13 +24,5 @@ const Main = () => (
 );
 
 // render the app
-
-const rootElement = document.getElementById('root');
-
-const root = createRoot(rootElement);
-
-root.render(
-  <React.StrictMode>
-    <Main />
-  </React.StrictMode>
-);
+const root = document.getElementById("root");
+createRoot(root).render(<Main />);

@@ -79,20 +79,6 @@ const KvBg = () => {
                 style={{
                     display: "block",
                     width: "100%",
-                    marginLeft: "50%",
-                    marginTop: "80%",
-                    position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.8}px)`),
-                    zIndex: "-40",
-                    opacity: "0.5",
-                }}
-                alt="Cloud 01"
-            />
-            <animated.img
-                src={cloud01}
-                style={{
-                    display: "block",
-                    width: "100%",
                     marginLeft: "-50%",
                     marginTop: "40%",
                     position: "absolute",
@@ -188,7 +174,22 @@ const KvBg = () => {
                 }}
                 alt="Cloud 01"
             />
+            <animated.img
+                src={cloud01}
+                style={{
+                    display: "block",
+                    width: "100%",
+                    marginLeft: "30%",
+                    marginTop: "2300px",
+                    position: "absolute",
+                    transform: offset.to((o) => `translateY(-${o * 0.5}px)`),
+                    zIndex: "5",
+                    opacity: "0.5",
+                }}
+                alt="Cloud 01"
+            />
         </div>
+
 
     );
 };

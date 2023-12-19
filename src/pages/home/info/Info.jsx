@@ -1,15 +1,14 @@
 import { useState } from "react";
-import "./Info.css";
+import './info.css'
 import Title from "../../shared/title";
 
 function Info() {
-    const [count, setCount] = useState(0);
 
     return (
-        <section id="info" className="height-[800px]">
+        <section id="info" className="min-h-screen">
             <Title text="応募要項" marginLeft="-100px" marginLeftTittle="110px" />
             <div className="bg-white/60 mt-[54px] m-5 h-[600px] p-5 rounded-lg">
-                <ul className="info-list  text-[#D13200]  h-[580px] pr-5 overflow-auto">
+                <ul className="info-list  text-[#D13200]  h-[580px] pr-5 overflow-auto" >
                     <li className="font-bold">応募期間</li>
                     <li>
                         <p>2024/01/01-2024/02/29</p>
@@ -79,7 +78,7 @@ function Info() {
                     </li>
                     <li className="font-bold">お問い合わせ先</li>
                     <li>
-                        <p><a href="">お問い合わせフォーム</a>にご記入ください。</p>
+                        <p><a href="/contact" className="text-[#FB3C00] underline decoration-1">お問い合わせフォーム</a> にご記入ください。</p>
                         <p>受け付け期間：2024年1月2日（火）〜 2024年4月30日（火）。</p>
                         <p>※応募の有効無効、当落について、 発表状況のお問い合わせには、回答できません。</p>
                     </li>

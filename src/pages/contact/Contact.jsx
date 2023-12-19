@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Shell from '../shared/shell';
-import Top from '../home/top/Top';
+import GoBackButton from '../shared/GoBack';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +9,7 @@ const ContactForm = () => {
     subject: '',
     message: '',
   });
+  const [isSent, setIsSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,19 +18,24 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // form submission logic 
-    console.log('Form submitted:', formData);
-  };
+    setIsSent(true);
 
+    // Show an alert
+    alert('ご連絡ありがとうございます!');
+  };
+  
   return (
     <section className='grid bg-[#46458E] bg-opacity-20 min-h-screen w-full'>
+      <div id="top" className="flex justify-between mr-3 ml-4 my-5">
+        <a href="/"><img src="./src/assets/logo/logo.svg" alt="SOLOTORI スペシャルサイトlogo" /></a>
+        <GoBackButton />
+      </div>
 
-      <Top className="mt-0" />
-      <div className="min-h-screen text-white p-4 pt-0 flex flex-col items-center">
-        <h2 className="text-[60px] font-bold mb-2">Contact us</h2>
+      <div className="min-h-screen p-4 pt-0 flex flex-col items-center">
+        <h2 className="text-white text-[60px] font-bold mb-2">Contact us</h2>
         <form onSubmit={handleSubmit} className="w-full max-w-lg px-6">
           <div className="mb-4">
-            <label htmlFor="subject" className="block text-sm font-semibold mr-2 mb-1 flex items-center">
+            <label htmlFor="subject" className=" text-white block text-sm font-semibold mr-2 mb-1 flex items-center">
               <Shell whiteOutline />
               氏名：
             </label>
@@ -45,7 +51,7 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-4">
-            <label htmlFor="subject" className="block text-sm font-semibold mr-2 mb-1 flex items-center">
+            <label htmlFor="subject" className="text-white block text-sm font-semibold mr-2 mb-1 flex items-center">
               <Shell whiteOutline />
               メールアドレス：
             </label>
@@ -61,12 +67,10 @@ const ContactForm = () => {
           </div>
 
           <div className="mb-4">
-            <div className="flex items-center">
-              <label htmlFor="subject" className="block text-sm font-semibold mb-1 mr-2 flex items-center">
-                <Shell whiteOutline />
-                件名：
-              </label>
-            </div>
+            <label htmlFor="subject" className=" text-white block text-sm font-semibold mr-2 mb-1 flex items-center">
+              <Shell whiteOutline />
+              件名：
+            </label>
             <input
               type="text"
               id="subject"
@@ -77,9 +81,8 @@ const ContactForm = () => {
               placeholder="〇〇について"
             />
           </div>
-
           <div className="mb-4">
-            <label htmlFor="subject" className="block text-sm font-semibold mr-2 mb-1 flex items-center">
+            <label htmlFor="subject" className="text-white block text-sm font-semibold mr-2 mb-1 flex items-center">
               <Shell whiteOutline />
               内容：
             </label>
@@ -94,18 +97,20 @@ const ContactForm = () => {
             />
           </div>
 
+
           <div className="mt-8 text-center">
             <button
               type="submit"
               className="bg-[#D13200] text-lg text-white font-medium py-4 px-32 rounded-full border-2 border-gray-100 hover:bg-gray-500 mx-auto"
+              onClick={handleSubmit}
+              disabled={isSent} // Disable the button after it's sent
             >
-              送信
+              {isSent ? '📤' : '送信'}
             </button>
           </div>
-
-        </form >
-      </div >
-    </section >
+        </form>
+      </div>
+    </section>
   );
 };
 

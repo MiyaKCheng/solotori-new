@@ -2,7 +2,6 @@
 .info-list {
   max-height: 580px;
   overflow-y: auto;
-
 }
 
 .info-list::-webkit-scrollbar {

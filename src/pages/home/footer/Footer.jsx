@@ -17,19 +17,23 @@ function Footer() {
   };
 
   return (
-    <footer style={footerStyle}>
+    <footer className="pb-4" style={footerStyle}>
       <div className="text-xl font-bold text-center relative z-10">
         <ul className="leading-[58px] flex-col justify-center">
           <li className="text-center flex items-center justify-center gap-2">
-            <a href="https://solotori.jp/">SOLOTORIラボ</a>
+            <a
+              target="_blank"
+              href="https://solotori.jp/">SOLOTORIラボ</a>
             <PopOutLine style={{ fill: '#D13200' }} />
           </li>
           <li className="text-center flex items-center justify-center gap-2">
-            <a href="https://magazine.solotori.jp/">SOLOTORI マガジン</a>
+            <a target="_blank"
+              href="https://magazine.solotori.jp/">SOLOTORI マガジン</a>
             <PopOutLine style={{ fill: '#D13200' }} />
           </li>
           <li className="text-center flex items-center justify-center">
-            <a href="https://www.instagram.com/solotori_official/">SOLOTORI Instagram</a>
+            <a
+              href="https://www.instagram.com/solotori_official/">SOLOTORI Instagram</a>
             <PopOutLine style={{ fill: '#D13200' }} />
           </li>
           <li className="text-center">

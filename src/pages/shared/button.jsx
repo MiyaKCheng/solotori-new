@@ -29,7 +29,7 @@ function CustomButton({ text, link }) {
         <div style={styles.buttonContainer}>
             <a href={link} style={styles.buttonText}>{text}</a>
             <PopOutLine />
-        </div>
+        </div >
     );
 }
 

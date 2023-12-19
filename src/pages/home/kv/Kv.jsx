@@ -14,19 +14,19 @@ function Kv() {
           <img
             src={kv01}
             alt="Key Visual Image"
-            className="relative block border-[3px] border-white kvshadow rounded-[15px]  -rotate-12 w-60 top-[35px] left-[55px] inset-0 transform-gpu  backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]" />
+            className="relative block border-[3px] border-white kvshadow rounded-[15px]  -rotate-12 w-60 top-[65px] left-[55px] inset-0 transform-gpu  backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]" />
           <div className="absolute top-0 right-0 mt-[-80px] mr-2 z-[-10] w-20">
             <NewNormal />
           </div>
 
         </div>
-        <div className="absolute flex flex-wrap items-center bottom-[68px] right-0">
+        <div className="absolute flex flex-wrap items-center bottom-[128px] right-0">
           <img src={Arrow} alt="Arrow" className="h-[110px]" />
           <p className="rotate-90 text-[#D13200] tracking-widest text-[20px] ml-[-25px]">SCROLL</p>
         </div>
 
 
-        <div className="absolute bottom-[-50px] pb-[130px] ml-3 h-200">
+        <div className="absolute bottom-[-10px] pb-[130px] ml-3 h-200">
           <div className="grid grid-cols-10">
             <p className="text-[20px] text-center tracking-widest bg-main-color bg-cover col-start-1 col-end-8 row-span-1 ">
               クリエイター
