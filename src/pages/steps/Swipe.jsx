@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import CustomButton from '../shared/button';
 import step1 from '../../assets/img/step01.png'
 import step2 from '../../assets/img/step02.png'
+import step3 from '../../assets/img/step03.png'
 import Clipboard from '../shared/clipbord';
 import Title from '../shared/title';
 // Import Swiper React components
@@ -71,7 +72,7 @@ export default function Swipe() {
           <h4 className='w-[190px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'># (ハッシュタグ) をつけて投稿！</h4>
 
           <img
-            src={step1}
+            src={step3}
             alt="Step 3"
             style={{ width: '144px', height: '240px', objectFit: 'cover' }}
             className='my-4'

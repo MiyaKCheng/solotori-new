@@ -39,7 +39,7 @@ const ContactForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
+              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
               placeholder="初路 都理"
             />
           </div>
@@ -55,7 +55,7 @@ const ContactForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
+              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
               placeholder="sorotori@gamil.com"
             />
           </div>
@@ -73,7 +73,7 @@ const ContactForm = () => {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              className="w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
+              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
               placeholder="〇〇について"
             />
           </div>
@@ -88,7 +88,7 @@ const ContactForm = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-[20px] min-h-[200px]"
+              className="placeholder:text-[#bfbfbf] w-full p-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-[20px] min-h-[200px]"
               placeholder="こちらにお問い合わせ内容を入力してください"
               rows="4"
             />

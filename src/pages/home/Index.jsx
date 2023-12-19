@@ -34,8 +34,6 @@ function Index() {
       <Info />
       <Footer />
 
-
-
       {displayMenu ? <Menu /> : null}
     </>
   );

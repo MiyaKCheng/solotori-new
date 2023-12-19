@@ -3,9 +3,7 @@ import NewNormal from "./NewNormal.jsx";
 // import { BlurBackground } from "./KvImg.jsx";
 import './Kv.css';
 import kv01 from '../../../assets/img/kv01.png';
-
-import kvBackground from '../../../assets/img/kvBackground.png';
-import new_normal from '../../../assets/img/new_normal.png'
+import Arrow from '../../../assets/img/arrow.png';
 function Kv() {
 
   return (
@@ -22,6 +20,11 @@ function Kv() {
           </div>
 
         </div>
+        <div className="absolute flex flex-wrap items-center bottom-[68px] right-0">
+          <img src={Arrow} alt="Arrow" className="h-[110px]" />
+          <p className="rotate-90 text-[#D13200] tracking-widest text-[20px] ml-[-25px]">SCROLL</p>
+        </div>
+
 
         <div className="absolute bottom-[-50px] pb-[130px] ml-3 h-200">
           <div className="grid grid-cols-10">
