@@ -6,7 +6,6 @@
     --menu-background: linear-gradient(to top right, #6de8b9, #b0deff59, #fdbdbd, #f0c2bd);
 }
 
-/* Common styles for menu container and hamburger menu */
 .menu-container,
 .hamburger-menu {
     position: relative;
@@ -31,7 +30,6 @@
 .menu-icon {
     cursor: pointer;
 }
-
 .bar {
     width: var(--bar-width);
     height: var(--bar-height);
@@ -40,7 +38,7 @@
     transition: transform 0.4s, opacity 0.4s;
 }
 
-/* Hamburger icon animations */
+/*  icon animations */
 .hamburger-menu.open .bar:nth-child(1) {
     transform: rotate(-45deg) translate(-7px, 7px);
 }
@@ -52,8 +50,12 @@
 .hamburger-menu.open .bar:nth-child(3) {
     transform: rotate(45deg) translate(-7px, -7px);
 }
+/* Slide-in animation */
+.hamburger-menu.open+.menu-items-container {
+    transform: translateX(0);
+}
 
-/* Menu items container and list */
+/* list */
 .menu-items-container,
 .menu-items {
     position: fixed;
@@ -92,7 +94,3 @@
     letter-spacing: 0.75px;
 }
 
-/* Slide-in animation */
-.hamburger-menu.open+.menu-items-container {
-    transform: translateX(0);
-}
