@@ -6,10 +6,16 @@ function Menu() {
   // track the menu is open or not
   const [isMenuOpen, setMenuOpen] = useState(false);
 
+  // close the menu
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   // toggle the menu state
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
+
   return (
     <div className="menu-container">
       {/* Hamburger menu */}
@@ -22,36 +28,36 @@ function Menu() {
         </div>
       </div>
 
-      {/* items container */}
+      {/* list */}
       <div className={`menu-items-container ${isMenuOpen ? "open" : ""}`}>
         <div className="menu-items">
-        <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />
-            Top
+            <a href="/">Top</a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />
-            ひとり旅の魅力
+            <a href="#content1">ひとり旅の魅力</a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />
-            SOLOTORIとは？
+            <a href="#content2">SOLOTORIとは？</a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />
-            クリエイターの良さ
+            <a href="#content3">クリエイターの良さ</a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />
-            応募方法
+            <a href="#steps">応募方法</a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />
-            みんなの旅
+            <a href="#ins">みんなの旅</a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />
-            応募要項
+            <a href="#info">応募要項</a>
           </div>
         </div>
       </div>

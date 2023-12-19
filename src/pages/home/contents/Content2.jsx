@@ -8,7 +8,7 @@ import CustomButton from "../../shared/button";
 function Content2() {
 
   return (
-    <div className="relative h-[700px] my-[80px] overflow-hidden">
+    <div id="content2" className="relative h-[700px] my-[80px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${cloud002})` }}

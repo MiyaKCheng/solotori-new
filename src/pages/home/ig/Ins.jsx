@@ -5,7 +5,7 @@ import CustomButton from "../../shared/button";
 function Ins() {
     const instagramLink = "https://www.instagram.com/solotori_official/";
     return (
-        <section className="my-20">
+        <section id="ins" className="my-20">
             <Title text="みんなの旅" />
             <div style={{ position: "relative" }} className="mt-10">
                 <InsSection />

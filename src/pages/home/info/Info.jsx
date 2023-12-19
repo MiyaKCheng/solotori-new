@@ -6,7 +6,7 @@ function Info() {
     const [count, setCount] = useState(0);
 
     return (
-        <section className="height-[800px]">
+        <section id="info" className="height-[800px]">
             <Title text="応募要項" marginLeft="-100px" marginLeftTittle="110px" />
             <div className="bg-white/60 mt-[54px] m-5 h-[600px] p-5 rounded-lg">
                 <ul className="info-list  text-[#D13200]  h-[580px] pr-5 overflow-auto">

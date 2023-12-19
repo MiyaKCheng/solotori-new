@@ -14,7 +14,7 @@ function Content3() {
   );
 
   return (
-    <div className="relative h-[800px] my-[80px] overflow-hidden">
+    <div id="content3" className="relative h-[800px] my-[80px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${cloud003})` }}

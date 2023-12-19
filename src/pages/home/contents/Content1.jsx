@@ -4,7 +4,7 @@ import Title from "../../shared/title";
 
 function Content1() {
   return (
-    <div className="relative h-[800px] my-[80px] overflow-hidden">
+    <div id="content1" className="relative h-[800px] my-[80px] overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${cloud001})` }}
