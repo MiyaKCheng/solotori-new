@@ -1,5 +1,4 @@
  body {
-     width: 390px;
      /* background: linear-gradient(to top right, #7df0cf9c, #7d9ef059, #f8967d68, #fa959448); */
      background: url(./assets/img/kvBackground.png);
      background-repeat: no-repeat;
@@ -7,5 +6,5 @@
      background-size: cover;
      height: fit-content;
      color: #D13200;
-     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+     font-family: "Noto Sans", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,  sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
  }

@@ -17,7 +17,7 @@ function Menu() {
   };
 
   return (
-    <div className="menu-container">
+    <div clas="menu-container">
       {/* Hamburger menu */}
       <div className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menu-icon" onClick={toggleMenu}>
@@ -37,7 +37,7 @@ function Menu() {
           </div>
           <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />
-            <a href="#content1">ひとり旅の魅力</a>
+            <a href="../#content1">ひとり旅の魅力</a>
           </div>
           <div className="flex items-center gap-2" onClick={closeMenu}>
             <Shell />

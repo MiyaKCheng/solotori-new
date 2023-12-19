@@ -8,7 +8,7 @@ function Footer() {
     backgroundImage: `url(${UnderWater})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: '600px',
+    height: '580px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'end',
@@ -17,7 +17,7 @@ function Footer() {
   };
 
   return (
-    <footer className="pb-4" style={footerStyle}>
+    <footer className="pb-4 mt-[-80px]" style={footerStyle}>
       <div className="text-xl font-bold text-center relative z-10">
         <ul className="leading-[58px] flex-col justify-center">
           <li className="text-center flex items-center justify-center gap-2">
