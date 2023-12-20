@@ -13,7 +13,6 @@ function Footer() {
     flexDirection: 'column',
     justifyContent: 'end',
     alignItems: 'center',
-    mixBlendMode: 'hard-light',
   };
 
   return (
