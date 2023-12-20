@@ -6,7 +6,7 @@ function Top() {
     <>
       <div >
         <div id="top" className="flex justify-between mr-3 ml-4 my-5">
-          <a href="/"><img src="../../../assets/logo/logo.svg" alt="SOLOTORI スペシャルサイトlogo" /></a>
+          <a href="/"><img src="../../../assets/logo/logo.png" alt="SOLOTORI スペシャルサイトlogo" /></a>
           <Menu />
         </div>
       </div>
