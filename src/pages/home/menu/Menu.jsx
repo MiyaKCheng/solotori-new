@@ -1,23 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Menu.css";
 import Shell from "../../shared/shell";
 
 function Menu() {
-  // track the menu is open or not
   const [isMenuOpen, setMenuOpen] = useState(false);
-
-  // close the menu
+  const [scrollDirection, setScrollDirection] = useState("up");
+  
   const closeMenu = () => {
     setMenuOpen(false);
   };
-
-  // toggle the menu state
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    let prevScrollPos = window.scrollY;
+
+    // Scrolling up and down
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      if (currentScrollPos > prevScrollPos) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="menu-container">
+    <div className={`menu-container ${scrollDirection === "up" ? "visible" : "hidden"}`}>
       <div className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menu-icon" onClick={toggleMenu}>
           <div className="bar"></div>
