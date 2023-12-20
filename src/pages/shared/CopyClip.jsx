@@ -4,19 +4,15 @@ const CopyClip = () => {
     const textToCopy = '#SOLOTORI #一人旅募集中 #世界観同化 #NewNormal';
     const buttonRef = useRef(null);
 
-    const handleCopyClick = () => {
-        const textarea = document.createElement('textarea');
-        textarea.value = textToCopy;
-        document.body.appendChild(textarea);
-
-        textarea.select();
-        document.execCommand('copy');
-
-        document.body.removeChild(textarea);
-
-        buttonRef.current.innerText = '＃コピーした！';
-        // popup message
-        window.alert('スペでの＃をコピーした！');
+    const handleCopyClick = async () => {
+        try {
+            await navigator.clipboard.writeText(textToCopy);
+            buttonRef.current.innerText = '＃コピーした！';
+            // popup message
+            window.alert('スペでの＃をコピーした！');
+        } catch (err) {
+            console.error('Failed to copy text: ', err);
+        }
     };
 
     return (
