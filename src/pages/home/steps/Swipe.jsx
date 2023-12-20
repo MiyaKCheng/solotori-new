@@ -1,9 +1,9 @@
 import React, { useRef, useState } from 'react';
-import CustomButton from '../shared/button';
-import step1 from '../../assets/img/step01.png';
-import step2 from '../../assets/img/step02.png';
-import step3 from '../../assets/img/step03.png';
-import CopyClip from '../shared/CopyClip';
+import CustomButton from '../../shared/button';
+import step1 from '../../../assets/img/step01.png';
+import step2 from '../../../assets/img/step02.png';
+import step3 from '../../../assets/img/step03.png';
+import CopyClip from '../../shared/CopyClip.jsx';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';

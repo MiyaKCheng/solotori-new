@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
-import Swipe from './Swipe';
-import Title from '../shared/title';
+import Swipe from './Swipe.jsx';
+import Title from '../../shared/title.jsx';
+import './Steps.css';
 
 export default function Steps() {
   return (
