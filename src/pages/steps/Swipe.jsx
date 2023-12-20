@@ -3,7 +3,7 @@ import CustomButton from '../shared/button';
 import step1 from '../../assets/img/step01.png';
 import step2 from '../../assets/img/step02.png';
 import step3 from '../../assets/img/step03.png';
-import ClipBoard from '../shared/clipBord.jsx';
+import ClipBoard from '../shared/ClipBord.jsx';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
