@@ -36,7 +36,7 @@ function Footer() {
             <PopOutLine style={{ fill: '#D13200' }} />
           </li>
           <li className="text-center">
-            <a href="contact">Contact us</a>
+            <a href="/contact">Contact us</a>
           </li>
         </ul>
         <p className="font-normal mt-20 leading-[38px]">
