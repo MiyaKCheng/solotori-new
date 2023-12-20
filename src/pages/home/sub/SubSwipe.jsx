@@ -13,7 +13,7 @@ import sub02 from "../../../assets/img/sub02.png";
 // import required modules
 import { EffectFade, Autoplay } from 'swiper/modules';
 
-export default function App() {
+export default function SubSwipe() {
     return (
         <>
             <Swiper
