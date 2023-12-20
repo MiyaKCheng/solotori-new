@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // Import other components
 import Kv from './kv/Kv.jsx';
 import Top from './top/Top.jsx';
-import Sub from "./sub/sub.jsx";
+import Sub from "./sub/Sub.jsx";
 import Content1 from "./contents/Content1.jsx";
 import Content2 from "./contents/Content2.jsx";
 import Content3 from "./contents/Content3.jsx";
