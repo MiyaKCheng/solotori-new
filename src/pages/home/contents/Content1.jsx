@@ -1,17 +1,15 @@
-import cloud001 from "../../../assets/img/cloud001.png";
+
 import "./Content.css";
+import cloud001 from '../.././../assets/img/cloud001.png';
 import Title from "../../shared/title";
 
 function Content1() {
   return (
-    <div id="content1" className="relative h-[800px] my-[80px] overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${cloud001})` }}
-      />
+    <div id="content1" className="relative h-[800px] w-full my-[80px]">
+      <img src={cloud001} alt="a cloud background picture" className="max-w-fit z-[-2] absolute right-[-50%]" />
       <div className="pt-[150px]">
         <Title text="ひとり旅の魅力" />
-        <div className="content absolute pt-[200px] inset-0 flex justify-center">
+        <div className="content absolute pt-[180px] inset-0 flex justify-center">
           <p>
             ひとり旅では、
           </p>

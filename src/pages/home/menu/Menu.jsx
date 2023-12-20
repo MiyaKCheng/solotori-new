@@ -17,11 +17,9 @@ function Menu() {
   };
 
   return (
-    <div clas="menu-container">
-      {/* Hamburger menu */}
+    <div className="menu-container">
       <div className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menu-icon" onClick={toggleMenu}>
-          {/* bars of the icon */}
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>

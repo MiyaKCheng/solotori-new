@@ -23,7 +23,7 @@ const ContactForm = () => {
     // Show an alert
     alert('ご連絡ありがとうございます!');
   };
-  
+
   return (
     <section className='grid bg-[#46458E] bg-opacity-20 min-h-screen w-full'>
       <div id="top" className="flex justify-between mr-3 ml-4 my-5">
@@ -35,7 +35,7 @@ const ContactForm = () => {
         <h2 className="text-white text-[60px] font-bold mb-2">Contact us</h2>
         <form onSubmit={handleSubmit} className="w-full max-w-lg px-6">
           <div className="mb-4">
-            <label htmlFor="subject" className=" text-white block text-sm font-semibold mr-2 mb-1 flex items-center">
+            <label htmlFor="subject" className=" text-white text-sm font-semibold mr-2 mb-1 flex items-center">
               <Shell whiteOutline />
               氏名：
             </label>
@@ -45,13 +45,13 @@ const ContactForm = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
+              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 focus:outline-none focus:border-[#D13200] bg-white rounded-full"
               placeholder="初路 都理"
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="subject" className="text-white block text-sm font-semibold mr-2 mb-1 flex items-center">
+            <label htmlFor="subject" className="text-white  text-sm font-semibold mr-2 mb-1 flex items-center">
               <Shell whiteOutline />
               メールアドレス：
             </label>
@@ -61,13 +61,13 @@ const ContactForm = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
+              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 focus:outline-none focus:border-[#D13200] bg-white rounded-full"
               placeholder="sorotori@gamil.com"
             />
           </div>
 
           <div className="mb-4">
-            <label htmlFor="subject" className=" text-white block text-sm font-semibold mr-2 mb-1 flex items-center">
+            <label htmlFor="subject" className=" text-white text-sm font-semibold mr-2 mb-1 flex items-center">
               <Shell whiteOutline />
               件名：
             </label>
@@ -77,12 +77,12 @@ const ContactForm = () => {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-full"
+              className="placeholder:text-[#bfbfbf] w-full px-5 border border-gray-100 focus:outline-none focus:border-[#D13200] bg-white rounded-full"
               placeholder="〇〇について"
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="subject" className="text-white block text-sm font-semibold mr-2 mb-1 flex items-center">
+            <label htmlFor="subject" className="text-white  text-sm font-semibold mr-2 mb-1 flex items-center">
               <Shell whiteOutline />
               内容：
             </label>
@@ -91,7 +91,7 @@ const ContactForm = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="placeholder:text-[#bfbfbf] w-full p-5 border border-gray-100 rounded focus:outline-none focus:border-[#D13200] bg-white rounded-[20px] min-h-[200px]"
+              className="placeholder:text-[#bfbfbf] w-full p-5 border border-gray-100 focus:outline-none focus:border-[#D13200] bg-white rounded-[20px] min-h-[200px]"
               placeholder="こちらにお問い合わせ内容を入力してください"
               rows="4"
             />

@@ -3,8 +3,8 @@ import CustomButton from '../shared/button';
 import step1 from '../../assets/img/step01.png'
 import step2 from '../../assets/img/step02.png'
 import step3 from '../../assets/img/step03.png'
-import Clipboard from '../shared/clipbord';
-import Title from '../shared/title';
+import ClipBoard from '../shared/clipBord.jsx';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -92,7 +92,7 @@ export default function Swipe() {
             <div className=" text-center text-xs font-bold leading-[20px]">#NewNormal</div>
           </div>
           <h5 className='w-[268px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'><br />　　　　　　　全てのハッシュタグをつけて、撮影した素敵な世界観の写真をインスタに投稿してくださいい!</h5>
-          <Clipboard />
+          <ClipBoard />
           <span className='h-[60px]'></span>
         </SwiperSlide>
       </Swiper >

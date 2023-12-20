@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import './info.css'
 import Title from "../../shared/title";
 
@@ -8,7 +8,7 @@ function Info() {
         <section id="info" className="min-h-screen">
             <Title text="応募要項" marginLeft="-100px" marginLeftTittle="110px" />
             <div className="bg-white/60 mt-[54px] m-5 h-[600px] p-5 rounded-lg">
-                <ul className="info-list  text-[#D13200]  h-[580px] pr-5 overflow-auto" >
+                <ul className=" info-list text-[#D13200] h-[580px] pr-5">
                     <li className="font-bold">応募期間</li>
                     <li>
                         <p>2024/01/01-2024/02/29</p>
@@ -25,14 +25,14 @@ function Info() {
                     <li>
                         <p>以下の手順に従って、ご応募いただけます。</p>
                         <ol>
-                            <li>Instagramアカウント「solotori_offical」をフォロー。</li>
+                            <li>Instagramアカウント「solotori_official」をフォロー。</li>
                             <li>「1人旅世界観同化を乗せる」を撮影。</li>
                             <li>撮影した写真と指定のハッシュタグ「#SOLOTORI」、「#一人旅募集中」「 #世界観同化」と「#NewNormal」を付けて、Instagramに投稿。</li>
                         </ol>
                     </li>
                     <li className="font-bold">応募資格</li>
                     <li>
-                        <ul>
+                        <ul className="">
                             <li>日本国内在住の方（本キャンペーンの関係者は応募できません）</li>
                             <li>この規約に同意された方 Instagramアカウントを保有し、当社指定アカウントをフォローされている方。</li>
                             <li>
@@ -65,7 +65,7 @@ function Info() {
                             応募を通じて、以下の事項に該当するアカウントからの応募は無効とさせていただく場合があります。
                             また入賞後に判明した場合も、入賞権利を無効とさせていただく場合があります。
                         </p>
-                        <ol>
+                        <ol className="list-disc">
                             <li>Instagramまの利用規約に違反している。</li>
                             <li>自動プログラムを利用して応募。</li>
                             <li>複数のアカウントからの応募。</li>

@@ -5,10 +5,7 @@
     --menu-background: linear-gradient(to top right, #6de8b9, #b0deff59, #fdbdbd, #f0c2bd);
 }
 
-.menu-container,
-.hamburger-menu {
-    position: relative;
-}
+
 
 .hamburger-menu {
     display: flex;
@@ -80,6 +77,11 @@
     z-index: 998;
 }
 
+.menu-container,
+.hamburger-menu {
+    position: relative;
+}
+
 /* Menu list styles */
 .menu-items {
     display: flex;
@@ -95,3 +97,4 @@
     line-height: 220%;
     letter-spacing: 0.75px;
 }
+

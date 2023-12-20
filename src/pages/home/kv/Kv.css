@@ -7,7 +7,7 @@
   margin-top: -10px;
 }
 
-.kvshadow {
+.kvShadow {
   box-shadow: 3px -2px 5px 0px rgba(240, 150, 125, 0.50), -2px 2px 2px 0px rgba(142, 255, 223, 0.38);
   backdrop-filter: blur(5px);
 }
