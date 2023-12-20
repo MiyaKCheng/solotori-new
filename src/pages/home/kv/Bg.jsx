@@ -74,7 +74,7 @@ const KvBg = () => {
                 }}
                 alt="Cloud 01"
             />
-            <animated.img
+            {/* <animated.img
                 src={cloud01}
                 style={{
                     display: "block",
@@ -87,7 +87,7 @@ const KvBg = () => {
                     opacity: "0.5",
                 }}
                 alt="Cloud 03"
-            />
+            /> */}
 
             {/* 3D Cloud for KV Area */}
             <animated.img
