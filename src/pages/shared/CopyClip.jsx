@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 
-const ClipBoard = () => {
+const CopyClip = () => {
     const textToCopy = '#SOLOTORI #一人旅募集中 #世界観同化 #NewNormal';
     const buttonRef = useRef(null);
 
@@ -43,4 +43,4 @@ const ClipBoard = () => {
     );
 };
 
-export default ClipBoard;
+export default CopyClip;
