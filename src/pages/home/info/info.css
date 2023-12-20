@@ -2,7 +2,6 @@
 .info-list {
   max-height: 580px;
   overflow-y: auto;
-  list-style-type: none;
 }
 
 .info-list::-webkit-scrollbar {
@@ -21,4 +20,35 @@
 
 .info-list::-webkit-scrollbar-thumb:hover {
   background: rgb(88, 1, 1);
+}
+
+.prose :where(ol > li):not(:where([class~="not-prose"], [class~="not-prose"] *))::marker {
+  color: #D13200;
+}
+
+.prose :where(ul > li):not(:where([class~="not-prose"], [class~="not-prose"] *))::marker {
+  color: #D13200;
+}
+
+
+/* ul:has(.new-style-child) {
+  list-style: none;
+} */
+
+.new-style {
+  list-style: none;
+}
+
+.new-style li::before {
+  content: "※";
+  color: #D13200;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 20px;
+
 }
