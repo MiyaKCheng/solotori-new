@@ -42,7 +42,7 @@ function Kv() {
               <p className="font-light text-[8px] bg-main-color bg-cover pl-1.5 p-1 rounded border border-white tracking-[.25em] text-white">
                 応募<br />期間
               </p>
-              <div className="text-main-color text-[30px] pl-2">
+              <div className="text-main-color text-[28px] pl-2">
                 1.01
                 <span className="text-xs ml-1">MON</span>
                 <span className="underline decoration-2 text-2xl ml-1 mr-1">　</span>
