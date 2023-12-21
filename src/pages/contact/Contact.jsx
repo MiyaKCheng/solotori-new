@@ -25,13 +25,13 @@ const ContactForm = () => {
   };
 
   return (
-    <section className='grid bg-[#46458E] bg-opacity-20 min-h-screen w-full'>
+    <section className='grid bg-[#46458E] bg-opacity-20 h-screen w-full'>
       <div id="top" className="flex justify-between mr-3 ml-4 my-5">
-        <a href="/"><img src="../../assets/logo/logo.png" alt="SOLOTORI スペシャルサイトlogo" /></a>
+        <a href="/"><img src="../../../public/logo.png" width="160px" alt="SOLOTORI スペシャルサイトlogo" /></a>
         <GoBackButton />
       </div>
 
-      <div className="min-h-screen p-4 pt-0 flex flex-col items-center">
+      <div className="h-screen p-x pt-0 flex flex-col items-center">
         <h2 className="text-white text-[60px] font-bold mb-2">Contact us</h2>
         <form onSubmit={handleSubmit} className="w-full max-w-lg px-6">
           <div className="mb-4">
@@ -96,8 +96,6 @@ const ContactForm = () => {
               rows="4"
             />
           </div>
-
-
           <div className="mt-8 text-center">
             <button
               type="submit"
