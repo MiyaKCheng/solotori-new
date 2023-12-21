@@ -6,7 +6,7 @@ import Shell from '../../shared/shell';
 function Info() {
 
     return (
-        <section id="info" className="min-h-screen">
+        <section id="info" className="max-h-screen">
             <Title text="応募要項" marginLeft="-100px" marginLeftTittle="110px" />
             <div className="bg-white/60 mt-[54px] m-5 h-[600px] p-5 rounded-lg list-disc list-inside">
                 <ul role="list" className="prose  prose-li:{color-[#D13200]} info-list text-[#D13200] h-[580px] pr-5">

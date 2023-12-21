@@ -38,14 +38,14 @@ export default function Swipe() {
       >
         {/* 1 */}
         <SwiperSlide className="flex flex-col">
-          <h3 className='Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP1</h3>
+          <h3 className='font-[Syncopate] w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP1</h3>
           <h4 className='w-[180px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>公式アカウントをフォロー</h4>
 
           <img
             src={step1}
             alt="Step 1"
             style={{ width: '144px', height: '240px', objectFit: 'cover' }}
-            className='my-4'
+            className='my-4 '
           />
           <h5 className='w-[260px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'>SOLOTORIのInstagramの公式アカウント(@solotori_office)をフォローしてください!</h5>
           <CustomButton text={'公式アカウント'} style={{ fontWeight: '700' }} link="https://www.instagram.com/solotori_official/" />

@@ -13,7 +13,6 @@ const KvBg = () => {
 
     const handleScroll = () => {
         const scrollY = window.scrollY;
-        console.log('Scroll Position:', scrollY);
         set({ offset: scrollY });
     };
 

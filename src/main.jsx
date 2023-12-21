@@ -16,7 +16,7 @@ const Main = () => (
       <div className="route">
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="https://solotori-new.vercel.app/contact" element={<Contact />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
     </div>

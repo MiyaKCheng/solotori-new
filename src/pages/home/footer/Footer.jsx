@@ -1,6 +1,7 @@
-import { useState } from "react";
+
 import PopOutLine from "../../shared/PopOutLine";
 import UnderWater from "../../../assets/img/under_water.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const footerStyle = {
@@ -30,13 +31,13 @@ function Footer() {
               href="https://magazine.solotori.jp/">SOLOTORI マガジン</a>
             <PopOutLine style={{ fill: '#D13200' }} />
           </li>
-          <li className="text-center flex items-center justify-center">
+          <li className="text-center flex items-center justify-center gap-2">
             <a
               href="https://www.instagram.com/solotori_official/">SOLOTORI Instagram</a>
             <PopOutLine style={{ fill: '#D13200' }} />
           </li>
           <li className="text-center">
-            <a href="https://solotori-new.vercel.app/contact">Contact us</a>
+            <Link to="contact">Contact us</Link>
           </li>
         </ul>
         <p className="font-normal mt-20 leading-[38px]">
