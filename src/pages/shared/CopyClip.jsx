@@ -9,7 +9,7 @@ const CopyClip = () => {
             await navigator.clipboard.writeText(textToCopy);
             buttonRef.current.innerText = '＃コピーした！';
             // popup message
-            window.alert('スペでの＃をコピーした！');
+            window.alert('全ての#️⃣(ハッシュタグ)をコピーしました！');
         } catch (err) {
             console.error('Failed to copy text: ', err);
         }
