@@ -5,17 +5,12 @@ import Shell from "../../shared/shell";
 function Menu() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [scrollDirection, setScrollDirection] = useState("up");
-  const menu = useRef(null);
+
   const closeMenu = () => {
     setMenuOpen(false);
   };
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
-    if (isMenuOpen) {
-      window.document.body.style.overflow = "visible";
-    } else {
-      window.document.body.style.overflow = "hidden";
-    }
   };
 
   useEffect(() => {
@@ -39,8 +34,8 @@ function Menu() {
   }, []);
 
   return (
-    <div className={`menu-container  ${scrollDirection === "up" || isMenuOpen === true && scrollDirection === "down" ? "visible" : "hidden"}`}>
-      <div className={`hamburger-menu ${isMenuOpen ? "open" : ""} `} >
+    <div className={`menu-container ${scrollDirection === "up" ? "visible" : "hidden"}`}>
+      <div className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menu-icon" onClick={toggleMenu}>
           <div className="bar"></div>
           <div className="bar"></div>
