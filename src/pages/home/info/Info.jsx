@@ -1,7 +1,7 @@
 
 import './info.css'
 import Title from "../../shared/title";
-import Shell from '../../shared/shell';
+import { Link } from "react-router-dom";
 
 function Info() {
 
@@ -77,7 +77,7 @@ function Info() {
                     </li>
                     <li className="sub-title">お問い合わせ先</li>
                     <li>
-                        <p><a href="/contact" className="text-[#FB3C00] underline decoration-1">お問い合わせフォーム</a> にご記入ください。</p>
+                        <p><Link to="contact" className="text-[#FB3C00] underline decoration-1">お問い合わせフォーム</Link> にご記入ください。</p>
                         <p>受け付け期間：2024年1月2日（火）〜 2024年4月30日（火）。</p>
                         <p>※応募の有効無効、当落について、 発表状況のお問い合わせには、回答できません。</p>
                     </li>
