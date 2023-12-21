@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Shell from '../shared/shell';
 import GoBackButton from '../shared/GoBack';
-
+import Logo from '../../assets/logo/logo.png';
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -27,7 +27,7 @@ const ContactForm = () => {
   return (
     <section className='grid bg-[#46458E] bg-opacity-20 h-screen w-full'>
       <div id="top" className="flex justify-between mr-3 ml-4 my-5">
-        <a href="/"><img src="../../../public/logo.png" width="160px" alt="SOLOTORI スペシャルサイトlogo" /></a>
+        <a href="/"><img src={Logo} width="160px" alt="SOLOTORI スペシャルサイトlogo" /></a>
         <GoBackButton />
       </div>
 
