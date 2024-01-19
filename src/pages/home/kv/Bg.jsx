@@ -84,9 +84,9 @@ const KvBg = () => {
                     left: "-80px",
                     marginTop: "280px",
                     zIndex: -1,
-                    opacity: "1"
+                    opacity: "1",
                 }}
-                alt="3D Cloud"
+            alt="3D Cloud"
             />
             <animated.img
                 src={cloud01}
