@@ -2,7 +2,7 @@ import React from "react";
 import NewNormal from "./NewNormal.jsx";
 // import { BlurBackground } from "./KvImg.jsx";
 import './Kv.css';
-import kv01 from '../../../assets/img/kv01.png';
+import kv01 from '../../../assets/img/kv02.png';
 import Arrow from '../../../assets/img/arrow.png';
 function Kv() {
 
@@ -11,10 +11,14 @@ function Kv() {
       <div id="KvArea" className=" font-extrabold text-white font-sans relative">
 
         <div className=" relative mt-[0px]">
-          <img
-            src={kv01}
-            alt="Key Visual Image"
-            className="absolute left-[14%] w-[65%] top-[60px] border-[3px] border-white kvShadow rounded-[15px] -rotate-12  inset-0 transform-gpu  backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]" />
+          <div className="absolute left-[14%]  top-[60px] -rotate-12">
+            <p className="absolute z-10 left-[3.7%] top-[270px] text-[#D13200] text-[9px] font-light leading-4"><span className="font-bold" >solotori_official</span>  #世界観同化 #NewNormal</p>
+            <p className="absolute z-10 left-[3.7%] top-[282px] text-[#D13200] text-[9px] font-light leading-5"> #solotori #一人旅募集中</p>
+            <img
+              src={kv01}
+              alt="Key Visual Image"
+              className=" w-[65%] border-[3px] border-white kvShadow rounded-[15px]  inset-0 transform-gpu  backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]" />
+          </div>
           <div className="absolute top-0 right-0 mt-[-65px] mr-2 z-[-10] w-20">
             <NewNormal />
           </div>
@@ -45,7 +49,7 @@ function Kv() {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-[18%] right-[-20px] flex flex-wrap items-center ">
+        <div className="absolute md:bottom-[17%] lg:bottom-[17%] bottom-[17%]  right-[-20px] flex flex-wrap items-center ">
           <img src={Arrow} alt="Arrow" className="h-[100px]" />
           <p className="rotate-90 text-[#D13200] tracking-[6px] text-[12px] ml-[-30px]">SCROLL</p>
         </div>

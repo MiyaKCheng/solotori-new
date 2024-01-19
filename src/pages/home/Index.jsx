@@ -12,6 +12,7 @@ import Ins from "./ig/Ins.jsx";
 import Info from "./info/Info.jsx";
 import Footer from "./footer/Footer.jsx";
 import Bg from "./kv/Bg.jsx";
+import Menu from "./menu/Menu.jsx";
 
 function Index() {
   const [displayMenu, setDisplayMenu] = useState(false);
@@ -19,11 +20,9 @@ function Index() {
   return (
     <>
       <Top />
-
       <div className="relative">
         <Bg style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: '0' }} />
         <Kv />
-
       </div>
       <Sub />
       <Content1 />
@@ -33,7 +32,6 @@ function Index() {
       <Ins />
       <Info />
       <Footer />
-
       {displayMenu ? <Menu /> : null}
     </>
   );

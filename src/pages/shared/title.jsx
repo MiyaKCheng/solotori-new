@@ -7,7 +7,7 @@ const getTitleStyles = (text, marginLeft, marginLeftTittle) => ({
         borderRadius: '0 50px 50px 0',
         border: '1px solid',
         borderColor: '#f0967ded',
-        background: 'rgba(255, 255, 255, 0.2)',
+        background: ' radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255 , 0), rgba(255, 255, 255 , 0.2))',
         boxShadow: '-4px 0px 4px 0px rgba(240, 150, 125, 0.60), 4px 0px 4px 0px rgba(125, 157, 240, 0.40), 1px 3px 0px 0px rgba(125, 240, 207, 0.40)',
         backdropFilter: 'blur(4px)',
         marginLeft: marginLeft || '-80px',
@@ -35,7 +35,7 @@ const getTitleStyles = (text, marginLeft, marginLeftTittle) => ({
         fontWeight: 700,
         lineHeight: '38px',
         letterSpacing: '0.95px',
-        textShadow: '0px 2px 3px #91dcf4bf, 0px 2px 2px #7DF0CF, 3px 1px 3px #f0967ded',
+        textShadow: '1px 1px 2px rgba(115, 190, 244 , 0.8) , 0px 2px 1px rgba(125, 240, 207, 0.80), 3px 1px 2px rgb(250, 150, 125)',
         zIndex: 1,
     },
 });

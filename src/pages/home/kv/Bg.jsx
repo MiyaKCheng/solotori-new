@@ -43,21 +43,6 @@ const KvBg = () => {
                     opacity: "0.7",
 
                 }} />
-            <animated.img
-                src={cloud01}
-                style={{
-                    display: "block",
-                    height: "400px",
-                    width: "100%",
-                    marginLeft: "180px",
-                    marginTop: "660px",
-                    position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.1}px)`),
-                    zIndex: -1,
-                    opacity: "0.5",
-                }}
-                alt="Cloud 01"
-            />
 
             {/* Cloud Layers for KV Area */}
             <animated.img
@@ -70,9 +55,9 @@ const KvBg = () => {
                     position: "absolute",
                     transform: offset.to((o) => `translateY(-${o * 0.3}px)`),
                     zIndex: -1,
-                    opacity: "0.5",
+                    opacity: "0.9",
                 }}
-                alt="Cloud 01"
+                alt="Cloud top left"
             />
             <animated.img
                 src={cloud01}
@@ -112,7 +97,7 @@ const KvBg = () => {
                     marginLeft: "50%",
                     marginTop: "80%",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.8}px)`),
+                    transform: offset.to((o) => `translateY(-${o * 0.6}px)`),
                     zIndex: "-40",
                     opacity: "0.5",
                 }}
@@ -128,9 +113,9 @@ const KvBg = () => {
                     position: "absolute",
                     transform: offset.to((o) => `translateY(-${o * 0.3}px)`),
                     zIndex: 0,
-                    opacity: "0.6",
+                    opacity: "0.9",
                 }}
-                alt="Cloud 01"
+                alt="Cloud"
             />
             <animated.img
                 src={cloud06}

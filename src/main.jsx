@@ -15,7 +15,7 @@ const Main = () => (
       <div className="background-image"></div>
       <div className="route">
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route exact path="/" element={<Index />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

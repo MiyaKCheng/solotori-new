@@ -4,7 +4,7 @@ import Spin from "./Spin.jsx";
 import SubSwipe from "./SubSwipe.jsx";
 
 import './Sub.css';
-import SubBg from "../../../assets/img/sub-bg.png"
+import SubBg from "../../../assets/img/sub-bg1.png"
 
 function Sub() {
 
@@ -18,7 +18,7 @@ function Sub() {
       <img
         src={SubBg}
         alt="Under Water画像"
-        className="sub-bg absolute top-[15px] w-100% h-[1000px]  mix-blend-hard-light z-[-15] opacity-30"
+        className="sub-bg absolute top-[0px] z-[-99] w-100% h-[950px] mix-blend-soft-light opacity-30 "
       />
     </section>
   );

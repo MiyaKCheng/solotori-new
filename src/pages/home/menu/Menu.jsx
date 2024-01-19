@@ -5,7 +5,7 @@ import Shell from "../../shared/shell";
 function Menu() {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [scrollDirection, setScrollDirection] = useState("up");
-  
+
   const closeMenu = () => {
     setMenuOpen(false);
   };
@@ -27,10 +27,10 @@ function Menu() {
       prevScrollPos = currentScrollPos;
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // window.addEventListener("scroll", handleScroll);
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
   }, []);
 
   return (

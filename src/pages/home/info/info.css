@@ -3,6 +3,11 @@
   max-height: 580px;
   overflow-y: auto;
   list-style-type: none;
+  
+}
+
+.info-list>.font-bold{
+  line-height: 50px;
 }
 
 .info-list::-webkit-scrollbar {

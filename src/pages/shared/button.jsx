@@ -12,11 +12,12 @@ const getButtonStyles = () => ({
         background: '#D13200',
         justifyContent: 'center',
         gap: '5px', //  between the Shell and text
+        boxShadow: '0px 4px 4px rgba(255, 255, 255, 0.25)',
     },
     buttonText: {
         color: '#FFF',
         fontSize: '18px',
-        fontWeight: 500,
+        fontWeight: 700,
         lineHeight: '38px',
         letterSpacing: '0.36px',
     },

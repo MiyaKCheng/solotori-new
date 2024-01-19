@@ -38,7 +38,7 @@ export default function Swipe() {
       >
         {/* 1 */}
         <SwiperSlide className="flex flex-col">
-          <h3 className='Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP1</h3>
+          <h3 className='stepshadow Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP1</h3>
           <h4 className='w-[180px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>公式アカウントをフォロー</h4>
 
           <img
@@ -47,13 +47,13 @@ export default function Swipe() {
             style={{ width: '144px', height: '240px', objectFit: 'cover' }}
             className='my-4'
           />
-          <h5 className='w-[260px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'>SOLOTORIのInstagramの公式アカウント(@solotori_office)をフォローしてください!</h5>
-          <CustomButton text={'公式アカウント'} style={{ fontWeight: '700' }} link="https://www.instagram.com/solotori_official/" />
+          <h5 className='drop-shadow w-[260px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'>SOLOTORIのInstagramの公式アカウント(@solotori_office)をフォローしてください!</h5>
+          <CustomButton className="shadow-md" text={'公式アカウント'} style={{ fontWeight: '900', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.4)' }} link="https://www.instagram.com/solotori_official/" />
           <span className='h-[60px]'></span>
         </SwiperSlide>
         {/* 2 */}
         <SwiperSlide className="flex flex-col">
-          <h3 className='Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP2</h3>
+          <h3 className='stepshadow Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP2</h3>
           <h4 className='w-[180px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>旅行先で撮影!</h4>
 
           <img
@@ -62,13 +62,13 @@ export default function Swipe() {
             style={{ width: '144px', height: '240px', objectFit: 'cover' }}
             className='my-4'
           />
-          <h5 className='w-[260px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'>1人旅をして旅行先であなたが素敵だと感じた風景をあなたの世界観で撮影してください！</h5>
+          <h5 className='drop-shadow w-[260px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'>1人旅をして旅行先であなたが素敵だと感じた風景をあなたの世界観で撮影してください！</h5>
 
           <span className='h-[109.19px]'></span>
         </SwiperSlide>
         {/* 3 */}
         <SwiperSlide className="flex flex-col">
-          <h3 className='Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP3</h3>
+          <h3 className='stepshadow Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP3</h3>
           <h4 className='w-[190px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'># (ハッシュタグ) をつけて投稿！</h4>
 
           <img
@@ -91,7 +91,7 @@ export default function Swipe() {
           <div className="px-1.5 left-[28px] top-[392px] absolute bg-white bg-opacity-10 rounded-[3px] border border-white justify-center items-center inline-flex">
             <div className=" text-center text-xs font-bold leading-[20px]">#NewNormal</div>
           </div>
-          <h5 className='w-[268px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'><br />　　　　　　　全てのハッシュタグをつけて、撮影した素敵な世界観の写真をインスタに投稿してくださいい!</h5>
+          <h5 className='drop-shadow w-[268px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'><br />　　　　　　　全てのハッシュタグをつけて、撮影した素敵な世界観の写真をインスタに投稿してくださいい!</h5>
           <CopyClip />
           <span className='h-[60px]'></span>
         </SwiperSlide>

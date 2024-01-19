@@ -1,0 +1,21 @@
+.eui-widget-title,
+.es-widget-title,
+.eapps-instagram-feed-title,
+.eapps-instagram-feed-posts-grid-load-more-text,
+.eapps-instagram-feed-posts-grid-load-more-text-visible,
+.eapps-instagram-feed-posts-grid-load-more,
+.es-load-more-button,
+.eapps-instagram-feed-posts-grid-load-more-visible,
+.eapps-instagram-feed-posts-grid-load-more {
+    visibility: hidden;
+    display: none;
+}
+
+#eapps-instagram-feed-1,
+.eapps-instagram-feed-posts-grid-load-more {
+    background: transparent;
+}
+
+.eapps-instagram-feed-posts-inner .es-layout-grid-content {
+    width: 260px !important;
+}

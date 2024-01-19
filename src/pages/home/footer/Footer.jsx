@@ -2,6 +2,7 @@ import { useState } from "react";
 import PopOutLine from "../../shared/PopOutLine";
 import UnderWater from "../../../assets/img/under_water.png";
 
+
 function Footer() {
   const footerStyle = {
     // backgroundColor: 'rgba(255,255,255,0.25)',
