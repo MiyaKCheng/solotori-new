@@ -1,4 +1,5 @@
 import React from "react";
+import _debounce from 'lodash/debounce';
 import { useSpring, animated } from "react-spring";
 import cloud01 from "../../../assets/img/cloud01.png";
 import cloud02 from "../../../assets/img/cloud02.png";
@@ -9,12 +10,16 @@ import cloudBg from "../../../assets/img/cloudBg.png";
 import kv3dCloud from "../../../assets/img/kv-3d-cloud.png";
 
 const KvBg = () => {
-    const [{ offset }, set] = useSpring(() => ({ offset: 0 }));
+    const [{ offset }, set] = useSpring(() => ({
+        offset: 0,
+        config: { tension: 170, friction: 26 } // 調整這裡的數值
+    }));
 
-    const handleScroll = () => {
+
+    const handleScroll = _debounce(() => {
         const scrollY = window.scrollY;
         set({ offset: scrollY });
-    };
+    }, 20);
 
     React.useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -22,7 +27,7 @@ const KvBg = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [handleScroll]);
 
     return (
         <div>
@@ -52,26 +57,13 @@ const KvBg = () => {
                     marginLeft: "-38%",
                     marginTop: "-80px",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.3}px)`),
+                    transform: offset.to((o) => `translate3d(0, -${o * 0.5}px, 0)`),
+                    WebkitTransform: `translate3d(0, -${offset * 0.5}px, 0)`,
                     zIndex: -1,
                     opacity: "0.9",
                 }}
                 alt="Cloud top left"
             />
-            {/* <animated.img
-                src={cloud01}
-                style={{
-                    display: "block",
-                    width: "100%",
-                    marginLeft: "-50%",
-                    marginTop: "40%",
-                    position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.15}px)`),
-                    zIndex: "-1",
-                    opacity: "0.5",
-                }}
-                alt="Cloud 03"
-            /> */}
 
             {/* 3D Cloud for KV Area */}
             <animated.img
@@ -80,13 +72,12 @@ const KvBg = () => {
                     display: "block",
                     width: "100%",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(${o * 0.05}px)`),
                     left: "-80px",
                     marginTop: "280px",
                     zIndex: -1,
                     opacity: "1",
                 }}
-            alt="3D Cloud"
+                alt="3D Cloud"
             />
             <animated.img
                 src={cloud01}
@@ -96,7 +87,9 @@ const KvBg = () => {
                     marginLeft: "50%",
                     marginTop: "80%",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.6}px)`),
+                    transform: offset.to((o) => `translate3d(0, -${o * 0.5}px, 0)`),
+                    WebkitTransform: `translate3d(0, -${offset * 0.5}px, 0)`,
+
                     zIndex: "-40",
                     opacity: "0.5",
                 }}
@@ -110,7 +103,8 @@ const KvBg = () => {
                     marginLeft: "-10%",
                     marginTop: "920px",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.3}px)`),
+                    transform: offset.to((o) => `translate3d(0, -${o * 0.5}px, 0)`),
+                    WebkitTransform: `translate3d(0, -${offset * 0.5}px, 0)`,
                     zIndex: 0,
                     opacity: "0.9",
                 }}
@@ -124,7 +118,8 @@ const KvBg = () => {
                     marginLeft: "50%",
                     marginTop: "1100px",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.3}px)`),
+                    transform: offset.to((o) => `translate3d(0, -${o * 0.5}px, 0)`),
+                    WebkitTransform: `translate3d(0, -${offset * 0.5}px, 0)`,
                     zIndex: 0,
                     opacity: "0.5",
                 }}
@@ -138,7 +133,8 @@ const KvBg = () => {
                     marginLeft: "-5%",
                     marginTop: "1570px",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.3}px)`),
+                    transform: offset.to((o) => `translate3d(0, -${o * 0.5}px, 0)`),
+                    WebkitTransform: `translate3d(0, -${offset * 0.5}px, 0)`,
                     zIndex: 0,
                     opacity: "0.3",
                 }}
@@ -152,7 +148,8 @@ const KvBg = () => {
                     marginLeft: "10%",
                     marginTop: "1450px",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.3}px)`),
+                    transform: offset.to((o) => `translate3d(0, -${o * 0.3}px, 0)`),
+                    WebkitTransform: `translate3d(0, -${offset * 0.3}px, 0)`,
                     zIndex: 0,
                     opacity: "0.5",
                 }}
@@ -166,7 +163,8 @@ const KvBg = () => {
                     marginLeft: "30%",
                     marginTop: "2300px",
                     position: "absolute",
-                    transform: offset.to((o) => `translateY(-${o * 0.5}px)`),
+                    transform: offset.to((o) => `translate3d(0, -${o * 0.3}px, 0)`),
+                    WebkitTransform: `translate3d(0, -${offset * 0.3}px, 0)`,
                     zIndex: "5",
                     opacity: "0.5",
                 }}
