@@ -4,7 +4,7 @@ function Spin() {
 
     return (
         <>
-            <svg className="absolute animate-spin-slow absolute top-[-100px] right-[-20px] overflow-hidden opacity-60" xmlns="http://www.w3.org/2000/svg" width="430" height="430" viewBox="0 0 414 414" fill="none">
+            <svg className="absolute animate-spin-slow top-[-100px] right-[-20px] overflow-hidden opacity-60" xmlns="http://www.w3.org/2000/svg" width="430" height="430" viewBox="0 0 414 414" fill="none">
                 <g filter="url(#filter0_d_495_671)">
                     <mask id="path-1-outside-1_495_671" maskUnits="userSpaceOnUse" x="4" y="4" width="430" height="430" fill="black">
                         <rect fill="white" x="4" y="4" width="430" height="430" />

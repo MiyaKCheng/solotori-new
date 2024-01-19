@@ -2,15 +2,6 @@
 .info-list {
   max-height: 570px;
   overflow-y: auto;
-<<<<<<< HEAD
-  list-style-type: none;
-  
-}
-
-.info-list>.font-bold{
-  line-height: 50px;
-=======
->>>>>>> origin/main
 }
 
 .info-list::-webkit-scrollbar {
