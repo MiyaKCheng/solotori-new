@@ -5,10 +5,9 @@
     --menu-background: linear-gradient(to top right, #6de8b9ad, #b0deff59, #f7c4c4ce, #f0c2bdce);
 }
 
-
-
 .hamburger-menu {
     display: flex;
+    position: relative;
     z-index: 999;
     width: var(--menu-size);
     height: var(--menu-size);
@@ -56,6 +55,7 @@
 /* list */
 .menu-items-container,
 .menu-items {
+    width: 390px;
     position: fixed;
     top: 0;
     right: 0;
@@ -67,7 +67,7 @@
     overflow: hidden;
     background: url(../../../assets/img/hbgBg.png);
     width: 100%;
-    height: 100%;
+    height: 844px;
     display: flex;
     align-items: center;
     justify-content: center;

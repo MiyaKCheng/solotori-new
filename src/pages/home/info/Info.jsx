@@ -1,27 +1,36 @@
 
 import './info.css'
 import Title from "../../shared/title";
+import { Link } from "react-router-dom";
 
 function Info() {
 
     return (
+<<<<<<< HEAD
         <section id="info" className="h-[800px]">
             <Title text="応募要項" marginLeft="-100px" marginLeftTittle="110px" />
             <div className="bg-white/60 mt-[70px] m-5 h-[600px] p-5 rounded-lg">
                 <ul className=" info-list text-[#D13200] h-[580px] pr-5 pb-5">
                     <li className="font-bold">応募期間</li>
+=======
+        <section id="info" className="max-h-screen">
+            <Title text="応募要項" marginLeft="-100px" marginLeftTittle="110px" />
+            <div className="bg-white/60 mt-[54px] m-5 h-[600px] p-5 rounded-lg list-disc list-inside">
+                <ul role="list" className="prose  prose-li:{color-[#D13200]} info-list text-[#D13200] h-[580px] pr-5">
+                    <li className="sub-title">応募期間</li>
+>>>>>>> origin/main
                     <li>
                         <p>2024/01/01-2024/02/29</p>
                     </li>
-                    <li className="font-bold">応募人数</li>
+                    <li className="sub-title">応募人数</li>
                     <li>
                         <p>5名様</p>
                     </li>
-                    <li className="font-bold">当選発表</li>
+                    <li className="sub-title">当選発表</li>
                     <li>
                         <p>2024/03/10</p>
                     </li>
-                    <li className="font-bold">応募方法</li>
+                    <li className="sub-title">応募方法</li>
                     <li>
                         <p>以下の手順に従って、ご応募いただけます。</p>
                         <ol>
@@ -33,17 +42,15 @@ function Info() {
                     <li className="font-bold">応募資格</li>
                     <li>
                         <ul className="">
-                            <li>日本国内在住の方（本キャンペーンの関係者は応募できません）</li>
+                            <li className="">日本国内在住の方（本キャンペーンの関係者は応募できません）</li>
                             <li>この規約に同意された方 Instagramアカウントを保有し、当社指定アカウントをフォローされている方。</li>
-                            <li>
-                                <ul>
-                                    <li>※1応募者1アカウントでの応募とさせていただきます。</li>
-                                    <li>※15歳未満のお客さまは、保護者の同意が必要です。保護者の方に本規約に同意してもらってください。15歳未満のお客さまからの応募は、すべて保護者の同意を得たものとみなします。</li>
-                                    <li>※アカウントが非公開設定になっている方、投稿が検索対象外となっている方、ご応募いただいた投稿を削除された方は、応募が無効となりますのでご注意ください。</li>
-                                    <li>※発表時点まで当社指定アカウントをフォローしている必要があります。</li>
-                                    <li>※アカウントをお持ちでない方は、アカウントを作成して応募してください。アカウント作成にあたっては、ご自身で対象サービスの利用規約などをご確認ください。 Instagram（https://www.instagram.com） </li>
-                                </ul>
-                            </li>
+                            <ul className="new-style">
+                                <li className="new-style-child">1応募者1アカウントでの応募とさせていただきます。</li>
+                                <li>15歳未満のお客さまは、保護者の同意が必要です。保護者の方に本規約に同意してもらってください。15歳未満のお客さまからの応募は、すべて保護者の同意を得たものとみなします。</li>
+                                <li>アカウントが非公開設定になっている方、投稿が検索対象外となっている方、ご応募いただいた投稿を削除された方は、応募が無効となりますのでご注意ください。</li>
+                                <li>発表時点まで当社指定アカウントをフォローしている必要があります。</li>
+                                <li>アカウントをお持ちでない方は、アカウントを作成して応募してください。アカウント作成にあたっては、ご自身で対象サービスの利用規約などをご確認ください。 Instagram（https://www.instagram.com） </li>
+                            </ul>
                         </ul>
                     </li>
                     <li className="font-bold">ご注意</li>
@@ -59,7 +66,7 @@ function Info() {
                             <li>本コンテスト応募作品撮影の際に発生したいかなる損失、負債、被害、費用、その他の申し立てについて、当社は一斉責任を負いません。</li>
                         </ul>
                     </li>
-                    <li className="font-bold">禁止事項</li>
+                    <li className="sub-title">禁止事項</li>
                     <li>
                         <p>
                             応募を通じて、以下の事項に該当するアカウントからの応募は無効とさせていただく場合があります。
@@ -76,9 +83,9 @@ function Info() {
                             <li>その他、運営事務局が不適切だと判断した行為。</li>
                         </ol>
                     </li>
-                    <li className="font-bold">お問い合わせ先</li>
+                    <li className="sub-title">お問い合わせ先</li>
                     <li>
-                        <p><a href="/contact" className="text-[#FB3C00] underline decoration-1">お問い合わせフォーム</a> にご記入ください。</p>
+                        <p><Link to="contact" className="text-[#FB3C00] underline decoration-1">お問い合わせフォーム</Link> にご記入ください。</p>
                         <p>受け付け期間：2024年1月2日（火）〜 2024年4月30日（火）。</p>
                         <p>※応募の有効無効、当落について、 発表状況のお問い合わせには、回答できません。</p>
                     </li>
