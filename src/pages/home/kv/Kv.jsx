@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import NewNormal from "./NewNormal.jsx";
 // import { BlurBackground } from "./KvImg.jsx";
 import './Kv.css';
 import kv01 from '../../../assets/img/kv02.png';
+import kv02 from '../../../assets/img/kv01.png';
 import Arrow from '../../../assets/img/arrow.png';
+
 function Kv() {
+  const [visibleImage, setVisibleImage] = useState(kv01);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setVisibleImage((prevImage) => (prevImage === kv01 ? kv02 : kv01));
+    }, 5000);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
 
   return (
     <>
@@ -12,12 +25,13 @@ function Kv() {
 
         <div className=" relative mt-[0px]">
           <div className="absolute left-[14%]  top-[60px] -rotate-12">
-            <p className="absolute z-10 left-[3.7%] top-[270px] text-[#D13200] text-[9px] font-light leading-4"><span className="font-bold" >solotori_official</span>  #世界観同化 #NewNormal</p>
-            <p className="absolute z-10 left-[3.7%] top-[282px] text-[#D13200] text-[9px] font-light leading-5"> #solotori #一人旅募集中</p>
+            <p className="absolute z-10 left-[3.7%] top-[300px] text-[#D13200] text-[9px] font-light leading-4"><span className="font-bold" >solotori_official</span>  #世界観同化 #NewNormal</p>
+            <p className="absolute z-10 left-[3.7%] top-[312px] text-[#D13200] text-[9px] font-light leading-5"> #solotori #一人旅募集中</p>
             <img
-              src={kv01}
+              src={visibleImage}
               alt="Key Visual Image"
-              className=" w-[65%] border-[3px] border-white kvShadow rounded-[15px]  inset-0 transform-gpu  backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]" />
+              className="w-[73%] border-[3px] border-white kvShadow rounded-[15px] inset-0 transform-gpu backdrop-blur-3xl blur-img bg-[rgba(225,225,225,0.3)]"
+            />
           </div>
           <div className="absolute top-0 right-0 mt-[-65px] mr-2 z-[-10] w-20">
             <NewNormal />

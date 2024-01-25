@@ -10,7 +10,7 @@ function Sub() {
 
   return (
     <section className="relative my-[50px] py-[120px]">
-      <h2 className="text-center absolute top-[350px] mx-10 mt-32  z-[10]  text-[64px] font-bold custom-text-shadow ">一人旅をしよう</h2>
+      <h2 className="text-center absolute top-[350px] mx-[50px] mt-32  z-[10]  text-[64px] font-bold custom-text-shadow ">一人旅をしよう</h2>
       <div className="relative place-items-center">
         <SubSwipe />
         <Spin />
