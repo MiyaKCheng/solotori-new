@@ -39,7 +39,7 @@ export default function Swipe() {
         {/* 1 */}
         <SwiperSlide className="flex flex-col">
           <h3 className='stepshadow Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP1</h3>
-          <h4 className='mt-[20px] mx-[70px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>公式アカウントをフォロー</h4>
+          <h4 className='mt-[20px] mx-[70px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>公式アカウントを<br />フォロー</h4>
 
           <img
             src={step1}
@@ -69,7 +69,7 @@ export default function Swipe() {
         {/* 3 */}
         <SwiperSlide className="flex flex-col">
           <h3 className='stepshadow Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP3</h3>
-          <h4 className='mx-[65px] mt-[20px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'># (ハッシュタグ) をつけて投稿！</h4>
+          <h4 className='mx-[65px] mt-[20px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'># (ハッシュタグ) を<br />つけて投稿！</h4>
 
           <img
             src={step3}
