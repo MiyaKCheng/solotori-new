@@ -39,7 +39,7 @@ export default function Swipe() {
         {/* 1 */}
         <SwiperSlide className="flex flex-col">
           <h3 className='stepshadow Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP1</h3>
-          <h4 className='mt-[20px] w-[170px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>公式アカウントをフォロー</h4>
+          <h4 className='mt-[20px] mx-[70px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>公式アカウントをフォロー</h4>
 
           <img
             src={step1}
@@ -54,7 +54,7 @@ export default function Swipe() {
         {/* 2 */}
         <SwiperSlide className="flex flex-col">
           <h3 className='stepshadow Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP2</h3>
-          <h4 className='mt-[20px] w-[170px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>旅行先で撮影!</h4>
+          <h4 className='mt-[20px] mx-[70px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'>旅行先で撮影!</h4>
 
           <img
             src={step2}
@@ -69,7 +69,7 @@ export default function Swipe() {
         {/* 3 */}
         <SwiperSlide className="flex flex-col">
           <h3 className='stepshadow Syncopate w-[231px] h-[20px] text-center text-white text-5xl font-bold leading-[0px] '>STEP3</h3>
-          <h4 className='w-[190px] mt-[20px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'># (ハッシュタグ) をつけて投稿！</h4>
+          <h4 className='mx-[65px] mt-[20px] h-[63px] text-center text-white text-xl font-bold leading-[30px] tracking-wide'># (ハッシュタグ) をつけて投稿！</h4>
 
           <img
             src={step3}
@@ -77,7 +77,7 @@ export default function Swipe() {
             style={{ width: '144px', height: '240px', objectFit: 'cover' }}
             className='my-4'
           />
-          <div className="left-[20px] top-[360px] absolute justify-start items-start gap-1 inline-flex">
+          <div className="left-[24px] top-[360px] absolute justify-start items-start gap-1 inline-flex">
             <div className="px-1.5 bg-white bg-opacity-10 rounded-[3px] border border-white justify-center items-center flex">
               <div className="text-center  text-xs font-bold  leading-[20px]">#SOLOTORI</div>
             </div>
@@ -88,7 +88,7 @@ export default function Swipe() {
               <div className="text-center  text-xs font-bold leading-[20px]">#世界観同化</div>
             </div>
           </div>
-          <div className="px-1.5 left-[20px] top-[392px] absolute bg-white bg-opacity-10 rounded-[3px] border border-white justify-center items-center inline-flex">
+          <div className="px-1.5 left-[24px] top-[392px] absolute bg-white bg-opacity-10 rounded-[3px] border border-white justify-center items-center inline-flex">
             <div className=" text-center text-xs font-bold leading-[20px]">#NewNormal</div>
           </div>
           <h5 className='-mt-[12px] drop-shadow w-[268px] h-[140px] text-center text-white text-base font-bold leading-[35px] tracking-wide'><br />　　　　　　全てのハッシュタグをつけて、撮影した素敵な世界観の写真をインスタに投稿してください!</h5>
